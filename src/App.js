@@ -1,13 +1,21 @@
-import './styles.css';
+import "./styles.css";
 
-function App() {
+import SearchForm from "./SearchForm";
+import CurrentWeather from "./CurrentWeather";
+import Footer from "./Footer";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
+      <div className="container">
+        <div className="Weather-app">
+          <SearchForm />
+          <hr />
+          <CurrentWeather />
+          <hr />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
-
-export default App;
